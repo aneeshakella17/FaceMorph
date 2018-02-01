@@ -1,0 +1,30 @@
+Overall, here are what my functions do:
+compute_pts allows us to plug in points into the image. The arr value is an array of strings that will be read and mapped to the value. n_value
+
+
+compute_avg computes the average of two sets of points. Useful when creating the intermediate frames. file1 is the file of the first dataset while file2 is the file of the second datset. 
+
+
+selectTriangle is used to fill in pixels for the mesh morphing algorithm. points is an index of the triangles. img1_final and img2_final are our dataset for our source. and transfer images respectively. img1 and img2 are our source and transfer images respectively. 
+
+morph is used to create  a single morph sequence. It takes in the average array, the two points arrays, the images, and the cross-dissolve factor. 
+
+cross_prod calculates cross product for three way vector. Input is the points. 
+
+inTri checks whether or not a point is in a triangle with vertices point1, point2, and point3. 
+
+
+create_morph is used to create the morphing gifs you see on the website. 
+
+compute_avg_face_shape was used to compute multiple files and average them -> useful for the danes task 
+
+
+convert_to_avg_face_shape will turn each image placed into the average face given as output by compute_avg_face_shape 
+
+calc_all_danish_morphs() initiates all the transformations.
+
+The function compute_lines is used as input for the Beier Neely algorithm
+
+I wrote my Beier Neely algorithm in beier-neely.m. It takes in the images and lines as inputs and produces a morph sequence. You have to preset a, b, and p within the code. 
+
+
